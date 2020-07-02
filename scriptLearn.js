@@ -115,6 +115,134 @@ console.log(todos[1].text);
     console.log(2*i);
  }
 
+// while
+let i = 0;
+while(i < 10) {
+    console.log(`While no:  ${i}`);
+    i++;
+}
+
+
+//for (let todo of todos) {
+//    console.log(todo.text)
+//}
+
+const myFun = function(todo) {
+    console.log(todo.text)
+}
+// applies function in a loop
+todos.forEach(myFun);
+
+const toText = todos.map((todo) => todo.text)
+console.log(toText)
+
+const isDone = todos.filter((todo) => (todo.isCompleted == true)).map((todo) => todo.text)
+console.log(isDone)
+
+const xx = '9';
+if(xx == 10){
+    console.log('x iss 10');
+}
+if(xx === 10){
+    console.log('x is identical 10');
+} else if (xx == 10) {
+    console.log('looks like 10');
+} else 
+console.log('does not match');
+
+// 2 > 1 && 3 == 3
+// 2 < 1 || 3 == 3
+
+// ternary operator (shorthand if statement)
+
+const xxx = 5;
+const color = xxx > 10 ? 'red' : 'blue';
+
+console.log(color);
+
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+        default:
+            console.log('color is something else');
+            break;
+}
+
+function addNums(num1, num2) {
+    return(num1 + num2)
+}
+
+function addNums2(num1 = 1, num2 = 1) {
+    console.log(num1 + num2)
+}
+
+addNums2()
+
+function addNums3(num1 = 7, num2 = 4) {
+    return(num1 + num2)
+}
+
+console.log(addNums3());
+
+
+const addNums4 = (num1 = 7, num2 = 4) => {
+    return(num1 + num2)
+};
+
+const addNums5 = (num1 = 7, num2 = 4) => (num1 + num2);
+
+///////////////// 
+
+// constructure functions with prototypes
+// esx classess ? 
+
+// constructor function uses capital
+function Person(firstName, lastName, dob){
+    this.firstName1 = firstName;
+    this.lastName1 = lastName;
+    this.dob1 = new Date(dob);
+
+    this.getBirthYear = function() {
+        return this.dob1.getFullYear();
+    }
+}
+
+const person1 = new Person('John', 'Doe','3-8-1984');
+
+console.log(person1);
+
+console.log(person1.getBirthYear());
+
+
+Person.prototype.birthSentence = function() {
+    return this.firstName1 + ' was born at ' + this.dob1;
+}
+
+console.log(person1.birthSentence());
+
+// es 6 (classess)
+
+class PersonB {
+    constructor(firstName,lastName,dob) {
+        this.firstName1 = firstName;
+        this.lastName1 = lastName;
+        this.dob1 = new Date(dob);    
+    }
+
+    // methods
+
+    birthSentence() {
+        return this.firstName1 + ' was born at ' + this.dob1
+    }
+}
+
+const person1B = new Person('JohnB', 'Doe','3-8-1984');
+console.log(person1B.birthSentence());
+
 
   function isZero (x) {
       if ( x == 0){
@@ -134,14 +262,20 @@ const timesFive = (x) => {if ( x == 0){
 
 const adder = (x,y) => x + y;
 
+///////////// questions
+
 //const makesPlusy = (y) => ((x) => x + y)
 
 // when do you use ;
 
 // making functions
 
+// sets
 
+// plotting
 
+// input textboxes from html, then outputs
 
+// ' vs ` vs "
 
 
