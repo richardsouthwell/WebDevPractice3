@@ -3,7 +3,7 @@
 // LOGGING OUTPUT
 alert('Hello World'); // Do not use for debugging. Stops script and only strings
 console.log('Hello World');
-console.error('This is an error');
+//console.error('This is an error');
 console.warn('This is a warning');
 
 
@@ -16,15 +16,15 @@ age = 31;
 
 // DATA TYPES - String, Number, Boolean, null, undefined
 const name = 'Brad';
-const age = 37;
+//const age = 37;
 const rating = 3.5;
 const isCool = true;
-const x = null;
+//const x = null;
 const y = undefined;
-let z; // undefined
+//let z; // undefined
 
 // Check type
-console.log(typeof z);
+//console.log(typeof z);
 
 
 // STRINGS
@@ -52,7 +52,7 @@ val = s.split('');
 // ARRAYS - Store multiple values in a variable
 const numbers = [1,2,3,4,5];
 const fruits = ['apples', 'oranges', 'pears', 'grapes'];
-console.log(numbers, fruit);
+console.log(numbers, fruits);
 
 // Get one value - Arrays start at 0
 console.log(fruits[1]);
@@ -206,15 +206,15 @@ const z = color === 'red' ? 10 : 20;
 
 
 // FUNCTIONS
-function greet(greeting = 'Hello', name) {
-  if(!name) {
+//function greet(greeting = 'Hello', name) {
+//  if(!name) {
     // console.log(greeting);
-    return greeting;
-  } else {
+//    return greeting;
+//  } else {
     // console.log(`${greeting} ${name}`);
-    return `${greeting} ${name}`;
-  }
-}
+//    return `${greeting} ${name}`;
+//  }
+//}
 
 
 // ARROW FUNCTIONS
@@ -261,13 +261,14 @@ console.log(person2);
 
 
 // Built in constructors
-const name = new String('Kevin');
-console.log(typeof name); // Shows 'Object'
+//const name = new String('Kevin');
+//console.log(typeof name); // Shows 'Object'
 const num = new Number(5);
 console.log(typeof num); // Shows 'Object'
 
 
 // ES6 CLASSES
+/*
 class Person {
   constructor(firstName, lastName, dob) {
     this.firstName = firstName;
@@ -289,6 +290,7 @@ class Person {
 const person1 = new Person('John', 'Doe', '7-8-80');
 console.log(person1.getBirthYear());
 
+*/
 
 // ELEMENT SELECTORS
 
@@ -338,7 +340,7 @@ nameInput.addEventListener('input', e => {
 
 // Put DOM elements into variables
 const myForm = document.querySelector('#my-form');
-const nameInput = document.querySelector('#name');
+//const nameInput = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const msg = document.querySelector('.msg');
 const userList = document.querySelector('#users');
