@@ -278,4 +278,4 @@ const adder = (x,y) => x + y;
 
 // ' vs ` vs "
 
-
+// why isnt the learning javascript.html active on website ?
